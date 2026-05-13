@@ -55,6 +55,10 @@ void draw() {
     seagull(seagullX, i + sin(a)*50);
     a = a + radians(30);
     seagullX -= 5;
+    
+    if (seagullX <= -30) {
+      seagullX = 1100; 
+    }
   }
   
 }
